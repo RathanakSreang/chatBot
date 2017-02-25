@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsApp</title>
+    <%= csrf_meta_tags %>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'jquery-latest' %>
+  </head>
+
+  <body onload="init()" id="page_body">
+    <%= yield %>
+    <%= javascript_include_tag 'application' %>
+  </body>
+</html>
